@@ -8,3 +8,14 @@ let number = 58423; // INPUT
 
 // write your code below this line
 
+let sum = 0;
+let tempNumber = number;
+
+
+while (tempNumber > 0) {
+    let lastDigit = tempNumber % 10;
+      sum += lastDigit;
+    
+    tempNumber = Math.floor(tempNumber / 10);
+}
+console.log("Sum is " + sum);
